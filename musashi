@@ -1,0 +1,168 @@
+/index.html  
+/css/style.css  
+/assets/ (for images and videos)  
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Família Viajante no Veleiro</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#intro">Início</a></li>
+                <li><a href="#journey">Nossa Jornada</a></li>
+                <li><a href="#videos">Vídeos</a></li>
+                <li><a href="#contact">Contato</a></li>
+                <li><a href="#support" class="btn-red">Apoie-nos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="intro" class="white-bg">
+        <h1>Bem-vindos ao nosso Veleiro!</h1>
+        <p>Somos uma família vivendo no mar, explorando o mundo e compartilhando tudo no nosso canal do YouTube.</p>
+        <a href="https://youtube.com" target="_blank" class="btn-red">Assista Agora</a>
+    </section>
+
+    <section id="journey">
+        <h2>Nossa Jornada</h2>
+        <p>Acompanhe nossa viagem pelo mundo.</p>
+        <div class="gallery">
+            <img src="assets/journey1.jpg" alt="Foto da jornada 1">
+            <img src="assets/journey2.jpg" alt="Foto da jornada 2">
+            <img src="assets/journey3.jpg" alt="Foto da jornada 3">
+        </div>
+    </section>
+
+    <section id="videos" class="white-bg">
+        <h2>Vídeos</h2>
+        <p>Assista aos nossos episódios no YouTube:</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" 
+                title="YouTube video player" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </section>
+
+    <section id="contact">
+        <h2>Contato</h2>
+        <form action="https://formsubmit.co/YOUR_EMAIL" method="POST">
+            <input type="text" name="name" placeholder="Seu Nome" required>
+            <input type="email" name="email" placeholder="Seu Email" required>
+            <textarea name="message" placeholder="Sua Mensagem" required></textarea>
+            <button type="submit" class="btn-red">Enviar</button>
+        </form>
+    </section>
+
+    <section id="support" class="white-bg">
+        <h2>Apoie-nos</h2>
+        <p>Ajude-nos a continuar nossa jornada:</p>
+        <a href="https://patreon.com" target="_blank" class="btn-red">Patreon</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Família no Veleiro. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #fff;
+}
+
+header {
+    background-color: #ff0000;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.btn-red {
+    background-color: #ff0000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn-red:hover {
+    background-color: #cc0000;
+}
+
+.white-bg {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.gallery img {
+    width: 30%;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 500px;
+    margin: auto;
+}
+
+form input, form textarea, form button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #ff0000;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #cc0000;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px
